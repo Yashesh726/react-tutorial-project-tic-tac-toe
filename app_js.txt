@@ -1,0 +1,30 @@
+import './App.css';
+import {useState} from 'react'
+
+function App()
+{
+  const [ board , setBoard ] = useState ( [ "" , "" , "" , "" , "" , "" , "" , "" , "" ] )
+  return (
+    <div className="App">
+      <div className="board">
+        <div className="row1">
+          <div className="box1"></div>
+          <div className="box2"></div>
+          <div className="box3"></div>
+        </div>
+        <div className="row2">
+          <div className="box4"></div>
+          <div className="box5"></div>
+          <div className="box6"></div>
+        </div>
+        <div className="row3">
+          <div className="box7"></div>
+          <div className="box8"></div>
+          <div className="box9"></div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
